@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    
+}
+
+body{
+    background: #23242a;
+}
+
+li, a, button{
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding: 8px 7%;
+    background-color: #1f1e1e;
+    box-shadow: 0px 1px 10px #45f3ff9e;
+}
+
+.logo{
+    width: 12%;
+    margin-right: auto;
+    padding: 0px 12;
+}
+
+
+.navbar li{
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+.navbar li a:hover{
+    transition: all 0.5s ease 0s;
+    color: #45f3ff;
+}
+
+.contact_btn{
+    background:  rgb(33, 33, 33);
+    padding: 9px;
+    border: 1px solid #45f3ff;
+    border-radius: 0px 13px;
+    cursor: pointer;
+    margin-left: 22px;
+}
+.contact_btn:hover{
+    box-shadow: 3px 3px 0px 1px rgba(38, 109, 129, 0.565);
+    transform: scale(103%);
+    transition: ease-in-out .2s;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+ 
+}
+
+.box{
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background: #1c1c1c;
+    border-radius: 12px;
+    overflow: hidden;
+  
+}
+/* blue light*/
+.box::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    
+}
+/* purple */
+.box::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, #ff45f9, #ff45f9);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.card{
+    position: absolute;
+    inset: 2px;
+    background: #28292d;
+    z-index: 3;
+    border-radius: 12px;
+}
+
+/* profile picture here */
+.pfp__box{ 
+    position: relative;
+    background: #1c1c1c;
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* animation for pfp */
+.pfp__box::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    animation: animate 3s linear infinite;
+    
+}
+.pfp__box::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(0deg, transparent, #ff45f9, #ff45f9);
+    transform-origin: bottom right;
+    animation: animate 3s linear infinite;
+    animation-delay: -1.5s;
+}
+
+/* overlapping circle */
+.pfp__card{
+    position: absolute;
+    inset: 2px;
+    background: #28292d;
+    z-index: 2;
+    border-radius: 50%;
+
+}
+
+.pfp__card img{
+    position: relative;
+    width: 100%;
+    border-radius: 50%;
+    
+}
+
+h1, h4, p{
+    color: white;
+    text-align: center;
+}
+.box h1{
+    padding: 20px 0px 11px;
+    font-weight: 300px;
+}
+.box p{
+    font-size: .7em;
+    padding-top: 5px;
+
+}
+
+.btn{
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    z-index: 4;
+    padding: 8px 10px;
+    top: 80%;
+    background-color: #28292d;
+    border: 1px solid #45f3ffbd;
+    border-radius: 0px 13px;
+}
+.btn a{
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+.btn:hover{
+    background: transparent;
+    box-shadow: 3px 3px 0px 1px rgba(38, 109, 129, 0.565);
+    transform: scale(105%);
+    transition: ease-in-out .2s;
+}
+.socials{
+    background: none;
+    position: absolute;
+    top: 300px;
+    left: 10px;
+}
+.socials li{
+    padding: 5px;
+    cursor: pointer;
+}
+.socials a{
+    color: #3ef2ff;
+    font-size: 20px;
+}
+.socials a:hover{
+    transition: ease-out .1s;
+    text-shadow: 2px 1px 1px rgb(250, 222, 255);
+}
