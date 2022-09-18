@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home: contacts</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+    <!-- Navigation start -->
+    <header>
+        <img class="logo" src="logo_nav.png" alt="logo">
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+        <a href="contacts.html"><button type="button" class="contact_btn">Let's talk!</button></a>
+    </header>
+    <!-- Navigation end -->
+   
+    <!-- Hero section start -->
+    <section class="contact_container">
+        <div class="contact_box">
+            <div class="contact_card">
+                <div class="socials">
+                    <ul>
+                        <li><a href="https://www.facebook.com/kritsana.phaithong"><i class='bx bxl-facebook-circle'></i></a></li>
+                        <li><a href="https://github.com/CodeWithKrizz"><i class='bx bxl-github'></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/kritsana-phaithong-19a02316a/"><i class='bx bxl-linkedin-square'></i></a></li>
+                    </ul>
+                </div>
+                <div class="pfp__box_ct">
+                    <div class="pfp__card_ct">
+                        <img src="Logo.jpg" alt="logo">
+                    </div>
+                </div>
+
+                <!-- CONTACT FORM START-->
+            <section id="form_container">
+                <div class="glass">
+                    <form action="" method="">
+                        <div class="radio">
+                            <h2><span>C</span>hoose your inquiry</h2><br>
+                        <input type="radio" id="Webdesign" value="Webdesign" name="inquiry">
+                        <label for="radio">Web design</label><br>
+                        <input type="radio" name="inquiry" id="frontend" value="frontend">
+                        <label for="frontend">Front End</label><br>
+                        <input type="radio" id="ux_ui" name="inquiry" value="ux_ui">
+                        <label for="ux_ui">UX/UI</label><br>
+                        <input type="radio" id="other" name="inquiry" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                    <div class="name">
+                        <label for="name">Name:</label>
+                        <input type="text" id="namn" name="name" required>
+                    </div>
+                    <div class="email">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+                    <div class="textarea">
+                        <h5>Special request</h5>
+                        <textarea name="request" id="request" cols="11" rows="5">text here..</textarea>
+                    </div>
+                    <input class="submit" type="submit" value="submit">
+                </form>
+            </div>
+            </section>
+            <!-- CONTACT FORM END -->
+            
+                <div id="abstrac">
+                    <div class="circle"></div>
+                    <div class="cube"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
