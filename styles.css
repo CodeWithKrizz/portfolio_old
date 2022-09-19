@@ -29,7 +29,7 @@ header{
     z-index: 999;
     background: #00000012;
     border: 1px solid rgba(255, 255, 255, 0.037);
-    box-shadow: 4px 2px 12px rgba(27, 27, 27, 0.166);
+    box-shadow: 4px 2px 10px rgba(27, 27, 27, 0.166);
 }
 
 .logo{
@@ -42,10 +42,17 @@ header{
     display: inline-block;
     padding: 0px 30px;
 }
+.navbar a{
+    padding: 5px;
+    color: #ffffff;
+}
+
+
 
 .navbar li a:hover{
     transition: all 0.5s ease 0s;
     color: #45f3ff;
+    
 }
 
 .contact_btn{
@@ -261,6 +268,7 @@ h1, h4, p{
     height: 100%;
     transform-style: preserve-3d;
     transition: ease-in 0.4s;
+    border-radius: 12px;
     
  
 }
@@ -274,7 +282,33 @@ h1, h4, p{
     box-shadow: 2px 2px 24px rgba(88, 88, 88, 0.533);
     color: aliceblue;
     border-radius: 12px;
+    
 }
+
+.card_front h4{
+    font-weight: 100;
+    font-size: 14px;
+    margin: 10px 0px;
+}
+.card_front p{
+    position: relative;
+    text-align: center;
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    border: 1px solid rgba(255, 255, 255, 0.298);
+    border-radius: 12px;
+    background: linear-gradient(120deg, rgba(231, 169, 255, 0.15), transparent, rgba(129, 215, 255, 0.102));
+    backdrop-filter: blur(3px);
+}
+.card_front h5, .card_back h5{
+    text-align: center;
+    font-style: bold;
+    margin-top: 12px;
+    text-transform: capitalize;
+
+}
+
 .card_back{
     position: absolute;
     width: 100%;
@@ -286,6 +320,23 @@ h1, h4, p{
     border-radius: 12px;
     border: 1px solid #ff45f9;
 }
+.card_back h4{
+    font-weight: 100;
+    font-size: 14px;
+    margin: 10px 0px;
+}
+.card_back p{
+    position: relative;
+    text-align: center;
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    border: 1px solid rgba(255, 255, 255, 0.298);
+    border-radius: 12px;
+    background: linear-gradient(120deg, rgba(231, 169, 255, 0.15), transparent, rgba(129, 215, 255, 0.102));
+    backdrop-filter: blur(3px);
+}
+
 .the_card h1{
     text-transform: uppercase;
     margin-top: 20px;
@@ -293,8 +344,26 @@ h1, h4, p{
 .the_card:hover{
     transform: rotateY(180deg);
 }
-
-
+.back_circle{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #45f3ff;
+    top: 50px;
+    left: 60px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgb(118, 209, 255);
+}
+.back_box{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: #ff45f9;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 12px;
+    
+}
 
 
 /* CONTACTS */
@@ -414,6 +483,7 @@ h1, h4, p{
     
 }
 
+
 /* FORM - Glass morphism */
 #form_container{    
     display: flex;
@@ -430,7 +500,7 @@ h1, h4, p{
     box-shadow: 2px 2px 15px rgba(33, 33, 33, 0.76);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.19);
-    left: 99px;
+    left: 70px;
     bottom: 120px;
     box-sizing: border-box;
     z-index: 2;
@@ -494,8 +564,8 @@ h1, h4, p{
 }
 .submit:hover{
     transform: scale(103%);
-    transition: ease-in .3s;
-    background: #29e7f5;
+    transition: ease-out .2s;
+    margin: 1px 0px;
     cursor: pointer;
 }
 
